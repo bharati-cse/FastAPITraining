@@ -13,10 +13,10 @@ def health():
 @app.post("/create")
 def create_something():
     return {"message": "created"}
-#Path parameters
-@app.get("/students/{usn}")
-def get_result(usn):
-    return {"Result":"Distinction","usn":usn}
+#Path parameters with type Hint
+@app.get("/candidate/{roolno}")
+def get_candidate(roolno:int):
+    return {"Result":"Distinction","roolno":roolno,"type":str(type(roolno))}
 
 ##HTTP methods
 #Are a way to talk (from browser) to the server
