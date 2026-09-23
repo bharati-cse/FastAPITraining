@@ -1,0 +1,57 @@
+# ==========================================
+# Python Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ==========================================
+# Virtual Environments (Local Setup)
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+*.bak/
+
+# ==========================================
+# Configuration and Environment Secrets
+# ==========================================
+# NEVER commit your actual API keys or database credentials
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Database files (SQLite / Local testing)
+# ==========================================
+*.sqlite3
+*.db
+test.db
+
+# ==========================================
+# Logging and Testing
+# ==========================================
+*.log
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# IDEs and Code Editors
+# ==========================================
+.vscode/
+.idea/
+*.code-workspace
+.history/
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db
