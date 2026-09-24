@@ -67,7 +67,7 @@ def get_user(
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
     return user_doc
 
-
+#for modified a data
 @router.put("/{user_id}", response_model=UserResponse)
 def update_user(
     user_id: str,
